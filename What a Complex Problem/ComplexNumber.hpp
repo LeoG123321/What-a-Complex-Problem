@@ -18,7 +18,7 @@ public:
 	ComplexNumber sub(ComplexNumber);	//Subtract
 	
 	ComplexNumber negate();				//Negation
-	float mag();				//Magnitude
+	float mag();						//Magnitude
 	ComplexNumber con();				//Conjugation
 
 	void pretty_print();				//prints in the form "a+ bi"

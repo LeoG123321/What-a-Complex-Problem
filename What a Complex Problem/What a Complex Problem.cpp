@@ -14,7 +14,8 @@
 #include <iostream>
 #include <cassert>
 #include <cmath>
-#include "ComplexNumber.hpp"
+#include "ComplexList.h"
+#include <vector>
 
 using namespace std;
 
@@ -59,5 +60,10 @@ int main() {
 	cout << " == 1 + 2i" << endl;
 
 	cout << "\nComplex Number Test Completed." << endl;
+
+
+
+
+
 	return 0;
 }

@@ -1,4 +1,4 @@
-#include <string>
+#include <vector>
 #include "ComplexNumber.hpp"
 
 using namespace std;
@@ -6,9 +6,10 @@ using namespace std;
 class ComplexList
 {
 private:
-	string numberList;
+	vector<ComplexNumber> numList;
 
 public:
-
+	ComplexList(vector<ComplexNumber>);
+	void sum();
 };
 
