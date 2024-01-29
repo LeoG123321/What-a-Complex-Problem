@@ -4,7 +4,7 @@
     Week 2              What a Complex Problem
 
     Write a well-tested ComplexNumber class that implements all of the operations listed in the 
-    ìBackground Informationî section. The class will include some extra methods that improve
+    ‚ÄúBackground Information‚Äù section. The class will include some extra methods that improve
     quality of life for developers (defined in the acceptance criteria).
 
     Then, write another class called ComplexList which is initialized with a list of ComplexNumber objects. 
@@ -62,11 +62,15 @@ int main() {
 
 	cout << "\nComplex Number Test Completed." << endl;
 
+	cout << "\n\nStarting Complex List Test...\n" << endl;
+
 	vector<ComplexNumber> numbers{first, second, third};
 
-	vector<ComplexNumber> list;
+	ComplexList numList(numbers);
 
-	string pretty = "";
+	cout << "Sum Function Output: ";
+	numList.sum();
+
 
 	return 0;
 }
