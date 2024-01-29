@@ -20,24 +20,39 @@ using namespace std;
 int main() {
 
 	//Complex Number Tests
-	ComplexNumber primary(1, 2);
-	ComplexNumber secondary(3, 4);
+	ComplexNumber first(1, 2);
+	ComplexNumber second(3, 4);
+	ComplexNumber third(-1, -2);
+
 	ComplexNumber test;
 
-	cout << "Starting Complex Number Test..." << endl;
+	cout << "Starting Complex Number Test...\n" << endl;
 
-	test = primary.add(secondary);
+	test = first.add(second);
 	assert(test.getRealNum() == 4);
 	assert(test.getImagineNum() == 6);
-	cout << "Addition Test Passed..." << endl;
+	cout << "Addition Test Complete..." << endl;
 
-	test = primary.sub(secondary);
+	test = first.sub(second);
 	assert(test.getRealNum() == -2);
 	assert(test.getImagineNum() == -2);
-	cout << "Subtraction Test Passed..." << endl;
+	cout << "Subtraction Test Complete..." << endl;
 
+	test = first.negate();
+	assert(test.getRealNum() == -1);
+	assert(test.getImagineNum() == -2);
+	cout << "Negation Test Complete..." << endl;
 
+	test = third.mag();
+	assert(test.getRealNum() == 1);
+	assert(test.getImagineNum() == 2);
+	cout << "Magnitude Test Complete..." << endl;
 
-	cout << "Test Complete." << endl;
+	test = first.con();
+	assert(test.getRealNum() == 1);
+	assert(test.getImagineNum() == -2);
+	cout << "Conjugation Test Complete..." << endl;
+
+	cout << "\nComplex Number Test Completed." << endl;
 	return 0;
 }
