@@ -36,7 +36,13 @@ ComplexNumber ComplexNumber::con() {
 	return ComplexNumber(realNum, imagineNum * -1);
 }
 
-void ComplexNumber::pretty_print() {
-	cout << realNum << " + " << imagineNum << "i";
+string ComplexNumber::pretty_print() {
+	string pretty = "";
+	pretty += realNum;
+	pretty += " + ";
+	pretty += imagineNum;
+	pretty += "i";
+
+	return pretty;
 }
 

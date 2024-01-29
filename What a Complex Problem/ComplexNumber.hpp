@@ -21,5 +21,5 @@ public:
 	float mag();						//Magnitude
 	ComplexNumber con();				//Conjugation
 
-	void pretty_print();				//prints in the form "a+ bi"
+	string pretty_print();				//prints in the form "a + bi"
 };
