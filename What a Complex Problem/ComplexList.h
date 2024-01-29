@@ -1,5 +1,4 @@
 #include <vector>
-#include <string>
 #include "ComplexNumber.hpp"
 
 using namespace std;
@@ -11,6 +10,6 @@ private:
 
 public:
 	ComplexList(vector<ComplexNumber>);
-	string sum();
+	void sum();
 };
 

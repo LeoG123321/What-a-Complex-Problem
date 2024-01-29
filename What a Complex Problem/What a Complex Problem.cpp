@@ -1,14 +1,14 @@
 /*
-    Leonardo Gonzalez   1/25/2024
+	Leonardo Gonzalez   1/25/2024
 
-    Week 2              What a Complex Problem
+	Week 2              What a Complex Problem
 
-    Write a well-tested ComplexNumber class that implements all of the operations listed in the 
-    “Background Information” section. The class will include some extra methods that improve
-    quality of life for developers (defined in the acceptance criteria).
+	Write a well-tested ComplexNumber class that implements all of the operations listed in the
+	“Background Information” section. The class will include some extra methods that improve
+	quality of life for developers (defined in the acceptance criteria).
 
-    Then, write another class called ComplexList which is initialized with a list of ComplexNumber objects. 
-    It should have a method that returns the sum of all of the numbers in the list.
+	Then, write another class called ComplexList which is initialized with a list of ComplexNumber objects.
+	It should have a method that returns the sum of all of the numbers in the list.
 */
 
 #include <iostream>
@@ -46,7 +46,7 @@ int main() {
 	assert(test.getRealNum() == -1);
 	assert(test.getImagineNum() == -2);
 	cout << "Negation Test Complete..." << endl;
-	
+
 	testNum = sqrt(5);
 	assert(first.mag() == testNum);
 	cout << "Magnitude Test Complete..." << endl;
@@ -56,21 +56,23 @@ int main() {
 	assert(test.getImagineNum() == -2);
 	cout << "Conjugation Test Complete..." << endl;
 
-	cout << first.pretty_print() << endl;
-	cout << second.pretty_print() << endl;
-	cout << third.pretty_print() << endl;
+	first.pretty_print();
+	cout << " == 1 + 2i" << endl;
 
 	cout << "\nComplex Number Test Completed." << endl;
 
 	cout << "\n\nStarting Complex List Test...\n" << endl;
 
-	vector<ComplexNumber> numbers{first, second, third};
+	vector<ComplexNumber> numbers{ first, second, third };
 
 	ComplexList numList(numbers);
 
 	cout << "Sum Function Output: ";
 	numList.sum();
 
+	cout << "Expected Result: 3 + 4i" << endl;
+
+	cout << "\nComplex List Test Completed" << endl;
 
 	return 0;
 }

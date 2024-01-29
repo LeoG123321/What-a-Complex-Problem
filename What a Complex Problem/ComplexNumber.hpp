@@ -1,7 +1,7 @@
 #include <string>
 using namespace std;
 
-class ComplexNumber 
+class ComplexNumber
 {
 private:
 	float realNum;			//Real Number
@@ -10,16 +10,16 @@ private:
 public:
 	ComplexNumber(float, float);		//Contructor
 	ComplexNumber();					//Default Constructor
-	
+
 	float getRealNum();					//Returns Real Number
 	float getImagineNum();				//Returns Imagninary Number
 
 	ComplexNumber add(ComplexNumber);	//Addition
 	ComplexNumber sub(ComplexNumber);	//Subtract
-	
+
 	ComplexNumber negate();				//Negation
 	float mag();						//Magnitude
 	ComplexNumber con();				//Conjugation
 
-	string pretty_print();				//prints in the form "a + bi"
+	void pretty_print();				//prints in the form "a+ bi"
 };
