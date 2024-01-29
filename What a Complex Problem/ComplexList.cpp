@@ -10,5 +10,11 @@ ComplexList::ComplexList(vector<ComplexNumber> list) {
 	}
 }
 
-
+void ComplexList::sum() {
+	ComplexNumber total;
+	for (int i = 0; i < numList.size(); i++) {
+		total = total.add(numList[i]);
+	}
+	total.pretty_print();
+	cout << endl;
 }
