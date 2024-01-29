@@ -61,7 +61,9 @@ int main() {
 
 	cout << "\nComplex Number Test Completed." << endl;
 
+	vector<ComplexNumber> numbers{first, second, third};
 
+	vector<ComplexNumber> list;
 
 
 
