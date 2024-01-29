@@ -53,9 +53,6 @@ int main() {
 	assert(test.getImagineNum() == -2);
 	cout << "Conjugation Test Complete..." << endl;
 
-	cout << "1 + 2i == ";
-	first.pretty_print();
-
 	cout << "\nComplex Number Test Completed." << endl;
 	return 0;
 }

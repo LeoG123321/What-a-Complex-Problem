@@ -1,6 +1,5 @@
-#include <iostream>
-#include <cmath>
 #include "ComplexNumber.hpp"
+#include <cmath>
 
 ComplexNumber::ComplexNumber(float realNum, float imagineNum) {
 	this->realNum = realNum;
@@ -35,10 +34,6 @@ ComplexNumber ComplexNumber::mag() {
 }
 ComplexNumber ComplexNumber::con() {
 	return ComplexNumber(realNum, imagineNum * -1);
-}
-
-void ComplexNumber::pretty_print() {
-	cout << realNum << " + " << imagineNum << "i" << endl;
 }
 
 

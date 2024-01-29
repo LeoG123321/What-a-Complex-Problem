@@ -1,6 +1,3 @@
-#include <string>
-using namespace std;
-
 class ComplexNumber 
 {
 private:
@@ -20,6 +17,4 @@ public:
 	ComplexNumber negate();				//Negation
 	ComplexNumber mag();				//Magnitude
 	ComplexNumber con();				//Conjugation
-
-	void pretty_print();				//Prints in the form "a+ bi"
 };
