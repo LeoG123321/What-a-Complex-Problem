@@ -18,26 +18,25 @@
 using namespace std;
 
 int main() {
+
+	//Complex Number Tests
 	ComplexNumber primary(1, 2);
 	ComplexNumber secondary(3, 4);
 	ComplexNumber test;
 
 	cout << "Starting Complex Number Test..." << endl;
-	
+
 	test = primary.add(secondary);
 	assert(test.getRealNum() == 4);
 	assert(test.getImagineNum() == 6);
 	cout << "Addition Test Passed..." << endl;
-	
+
 	test = primary.sub(secondary);
 	assert(test.getRealNum() == -2);
 	assert(test.getImagineNum() == -2);
 	cout << "Subtraction Test Passed..." << endl;
-	
-	test = primary.mult(secondary);
-	assert(test.getRealNum() == -5);
-	assert(test.getImagineNum() == 10);
-	cout << "Multiplication Test Passed..." << endl;
+
+
 
 	cout << "Test Complete." << endl;
 	return 0;

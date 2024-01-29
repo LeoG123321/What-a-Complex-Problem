@@ -18,7 +18,7 @@ float ComplexNumber::getImagineNum() {
 	return imagineNum;
 }
 
-ComplexNumber ComplexNumber::add(ComplexNumber sec) {	//pri == Primary		sec == Secondary
+ComplexNumber ComplexNumber::add(ComplexNumber sec) {			//sec == Secondary
 	return ComplexNumber(realNum + sec.getRealNum(), imagineNum + sec.getImagineNum());
 }
 
@@ -26,23 +26,14 @@ ComplexNumber ComplexNumber::sub(ComplexNumber sec) {
 	return ComplexNumber(realNum - sec.getRealNum(), imagineNum - sec.getImagineNum());
 }
 
-ComplexNumber ComplexNumber::mult(ComplexNumber sec) {
-	return ComplexNumber(realNum * sec.getRealNum() - imagineNum * sec.getImagineNum(), realNum * sec.getImagineNum() + imagineNum * sec.getRealNum());
-}
-
-
-ComplexNumber ComplexNumber::div(ComplexNumber sec) {
-	return ComplexNumber();
-}
-
 ComplexNumber ComplexNumber::negate() {
-	return ComplexNumber();
+	return ComplexNumber(realNum * -1, imagineNum * -1);
 }
 ComplexNumber ComplexNumber::mag() {
-	return ComplexNumber();
+	return ComplexNumber(realNum * realNum / realNum, imagineNum * imagineNum / imagineNum);
 }
 ComplexNumber ComplexNumber::con() {
-	return ComplexNumber();
+	return ComplexNumber(realNum, imagineNum * -1);
 }
 
 
