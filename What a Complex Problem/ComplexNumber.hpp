@@ -10,7 +10,7 @@ private:
 public:
 	ComplexNumber(float, float);		//Contructor
 	ComplexNumber();					//Default Constructor
-
+	
 	float getRealNum();					//Returns Real Number
 	float getImagineNum();				//Returns Imagninary Number
 
@@ -18,8 +18,8 @@ public:
 	ComplexNumber sub(ComplexNumber);	//Subtract
 	
 	ComplexNumber negate();				//Negation
-	ComplexNumber mag();				//Magnitude
+	float mag();				//Magnitude
 	ComplexNumber con();				//Conjugation
 
-	void pretty_print();				//Prints in the form "a+ bi"
+	void pretty_print();				//prints in the form "a+ bi"
 };

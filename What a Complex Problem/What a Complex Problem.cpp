@@ -13,6 +13,7 @@
 
 #include <iostream>
 #include <cassert>
+#include <cmath>
 #include "ComplexNumber.hpp"
 
 using namespace std;
@@ -25,6 +26,8 @@ int main() {
 	ComplexNumber third(-1, -2);
 
 	ComplexNumber test;
+
+	float testNum;
 
 	cout << "Starting Complex Number Test...\n" << endl;
 
@@ -42,10 +45,9 @@ int main() {
 	assert(test.getRealNum() == -1);
 	assert(test.getImagineNum() == -2);
 	cout << "Negation Test Complete..." << endl;
-
-	test = third.mag();
-	assert(test.getRealNum() == 1);
-	assert(test.getImagineNum() == 2);
+	
+	testNum = sqrt(5);
+	assert(first.mag() == testNum);
 	cout << "Magnitude Test Complete..." << endl;
 
 	test = first.con();
@@ -53,8 +55,8 @@ int main() {
 	assert(test.getImagineNum() == -2);
 	cout << "Conjugation Test Complete..." << endl;
 
-	cout << "1 + 2i == ";
 	first.pretty_print();
+	cout << " == 1 + 2i" << endl;
 
 	cout << "\nComplex Number Test Completed." << endl;
 	return 0;

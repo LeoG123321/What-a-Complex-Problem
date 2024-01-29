@@ -8,10 +8,7 @@ ComplexNumber::ComplexNumber(float realNum, float imagineNum) {
 }
 
 ComplexNumber::ComplexNumber() {
-	realNum = 0;
-	imagineNum = 0;
 }
-
 
 float ComplexNumber::getRealNum() {
 	return realNum;
@@ -30,15 +27,14 @@ ComplexNumber ComplexNumber::sub(ComplexNumber sec) {
 ComplexNumber ComplexNumber::negate() {
 	return ComplexNumber(realNum * -1, imagineNum * -1);
 }
-ComplexNumber ComplexNumber::mag() {
-	return ComplexNumber(sqrt(realNum * realNum), sqrt(imagineNum * imagineNum));
+float ComplexNumber::mag() {
+	return sqrt((realNum * realNum) + (imagineNum * imagineNum));
 }
 ComplexNumber ComplexNumber::con() {
 	return ComplexNumber(realNum, imagineNum * -1);
 }
 
 void ComplexNumber::pretty_print() {
-	cout << realNum << " + " << imagineNum << "i" << endl;
+	cout << realNum << " + " << imagineNum << "i";
 }
-
 

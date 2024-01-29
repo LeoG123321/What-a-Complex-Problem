@@ -127,10 +127,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="ComplexList.cpp" />
     <ClCompile Include="ComplexNumber.cpp" />
     <ClCompile Include="What a Complex Problem.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="ComplexList.h" />
     <ClInclude Include="ComplexNumber.hpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
