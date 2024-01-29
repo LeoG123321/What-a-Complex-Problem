@@ -8,6 +8,8 @@ ComplexNumber::ComplexNumber(float realNum, float imagineNum) {
 }
 
 ComplexNumber::ComplexNumber() {
+	realNum = 0;
+	imagineNum = 0;
 }
 
 float ComplexNumber::getRealNum() {

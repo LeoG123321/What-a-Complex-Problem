@@ -61,11 +61,18 @@ int main() {
 
 	cout << "\nComplex Number Test Completed." << endl;
 
+	cout << "\n\nStarting Complex List Test...\n" << endl;
+
 	vector<ComplexNumber> numbers{first, second, third};
 
-	vector<ComplexNumber> list;
+	ComplexList numList(numbers);
 
+	cout << "Sum Function Output: ";
+	numList.sum();
 
+	cout << "Expected Result: 3 + 4i" << endl;
+
+	cout << "\nComplex List Test Completed" << endl;
 
 	return 0;
 }
