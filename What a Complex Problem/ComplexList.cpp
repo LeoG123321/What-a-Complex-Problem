@@ -9,3 +9,11 @@ ComplexList::ComplexList(vector<ComplexNumber> list) {
 		list.pop_back();
 	}
 }
+
+string ComplexList::sum() {
+	ComplexNumber total;
+	for (int i = 0; i < numList.size() - 1; i += 2) {
+		total = total.add(numList[i]);
+	}
+	return total.pretty_print();
+}

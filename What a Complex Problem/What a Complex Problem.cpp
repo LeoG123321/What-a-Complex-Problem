@@ -56,8 +56,9 @@ int main() {
 	assert(test.getImagineNum() == -2);
 	cout << "Conjugation Test Complete..." << endl;
 
-	first.pretty_print();
-	cout << " == 1 + 2i" << endl;
+	cout << first.pretty_print() << endl;
+	cout << second.pretty_print() << endl;
+	cout << third.pretty_print() << endl;
 
 	cout << "\nComplex Number Test Completed." << endl;
 
@@ -65,7 +66,7 @@ int main() {
 
 	vector<ComplexNumber> list;
 
-
+	string pretty = "";
 
 	return 0;
 }
